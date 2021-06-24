@@ -1,0 +1,13 @@
+name: Docker Image CI
+
+on:
+  push:
+    tags:
+      - v0.1.*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: AWS ECR
+      uses: kciter/aws-ecr-action@v3
