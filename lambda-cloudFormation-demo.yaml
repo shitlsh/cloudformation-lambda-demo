@@ -4,6 +4,9 @@ Parameters:
     Description: lambda default name
     Type: String
     Default: tshi-s3-sync-lambda
+  LambdaImage:
+    Description: lambda image in ECR
+    Type: String
 Resources:
   OriginalBucket:
     Type: AWS::S3::Bucket
