@@ -65,8 +65,7 @@ Resources:
       Runtime: nodejs12.x
       Handler: index.handler
       Code:
-        ZipFile: |
-          //TODO
+        ImageUri: !Ref LambdaImage
   ScheduledRule:
     Type: AWS::Events::Rule
     Properties:
